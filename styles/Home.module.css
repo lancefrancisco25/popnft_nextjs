@@ -1,116 +1,89 @@
-.container {
-  padding: 0 2rem;
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 7rem;
+  height: 3rem;
+  margin: 20px auto;
+  position: relative;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.mainCont {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.mainContCenter{
   display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+  width: 90%;
 }
 
 .title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  text-align: center;
+  row-gap: 20px;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.title h1{
+  font-size: 3.4rem;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.title p{
+  font-size: 1.2rem;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.title span {
+  background-color: red;
+  background-image: linear-gradient(45deg, #FFA800, #FF6E4E);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.walletconnect {
+  margin: 30px 0;
+  border-radius: 50vh;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #FF6E4E;
+  background-image: linear-gradient(45deg, #FFA800, #FF6E4E);
+  background-size: 100%;
+  background-repeat: repeat;
+  border: none;
+  cursor: pointer;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.socials {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em 0;
 }
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+.socials .twitter {
+  height: 1.4rem;
+  margin: 0.9em 1em 1em 1em;
+}
+.socials .discord {
+  height: 1rem;
+  margin: 1em;
+}
+/*responsivity for device lower than 600px*/
+@media all and (max-width: 600px) {
+  .title h1{
+    font-size: 2.4rem;
   }
 }
